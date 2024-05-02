@@ -1,0 +1,52 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ .conta .main{
+   width: 500vw;
+    height: 85vh;
+    background: url(s4.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: image 40s infinite linear;
+
+}
+
+@media  (max-width: 500px) and (min-width:200px){
+h1{
+   position:absolute;
+   padding-top:50%;
+   text-align: center;
+   z-index: 1;
+   padding-right:30px;
+   color:white;
+
+  }
+}
+
+
+@keyframes image
+{
+    0%{background: url(s5.jpeg);background-repeat: no-repeat;  background-size: cover;}
+    25%{background: url(s4.jpeg) no-repeat;
+        background-size: cover;}
+    50%{background: url(s3.jpeg);  background-repeat: no-repeat;
+        background-size: cover;}
+    75%{background: url(s2.jpeg); background-repeat: no-repeat;
+        background-size: cover;}
+    100%{background: url(s1.jpeg); background-repeat: no-repeat;
+        background-size: cover;}
+}
+
+
+ .main h1{
+  padding-top: 23%;
+  position: absolute;
+  color: white;
+  z-index: 1;
+  padding-left:50px;
+}
+.zz{
+    height: 440px!important;
+}

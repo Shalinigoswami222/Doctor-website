@@ -1,0 +1,56 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.stor h2{
+z-index: 1;
+position: absolute;
+top: 300px;
+color: white;
+display: flex;
+justify-content: center;
+align-content: center;
+font-size: 50px;
+}
+.pr{
+   font-size: 18px;
+}
+
+.jn{
+    width: 300px;
+    height: 60px;
+    font-size:18px;
+    background-color: maroon;
+    color: white;
+    margin-left: 20px;
+}
+ 
+.inpu input::placeholder{
+  font-size: 20px; 
+   font-weight: bold;
+   
+
+}
+
+.inpu textarea::placeholder{
+  font-size: 20px; 
+  font-weight: bold;
+
+}
+#qq{
+    background-color: maroon;
+}
+.foot,#zh {
+    background-color:black;
+}
+#bb{
+    background-color: blueviolet;
+    color: white;
+    padding: 7px;
+    width: 180px;
+}
+.rr{
+    color: white;
+    font-size:20px;
+}

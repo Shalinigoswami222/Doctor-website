@@ -1,0 +1,564 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .navbar .navbar-nav .nav-item .nav-link{
+           margin: 12px 20px;
+           color: black;
+        }
+        
+        
+        .navbar .navbar-nav .nav-item .nav-link:hover{
+        
+        color: #3cb371 ;
+        
+        }
+        
+        .btns{
+          border: 4px solid white;
+          width: 400px;
+          height:45px;
+          text-decoration: none;
+        font-size: 18px;
+        
+        padding:10px 15px;
+        color: aliceblue;
+        
+        
+        }
+        
+        .btns:hover{
+        background-color: #3cb371;
+        color: black;
+        }
+        
+        .main .card-text{
+          color: grey;
+        }
+        
+        .list ul li{
+        
+          list-style: none;
+        
+        }
+        
+        .list li a{
+          text-decoration: none;
+        }
+        
+        
+        
+        .conta .main{
+           width: 500vw;
+            height: 95vh;
+            margin-top: 20px;
+           
+            background: url(m1.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            animation: image 40s infinite linear;
+        
+        }
+        
+        @media  (max-width: 500px) and (min-width:200px){
+          .container .main h1 {
+           position:absolute;
+           padding-top:60%;
+           text-align: center;
+           z-index: 1;
+           padding-right: 30px;
+           color:white;
+        
+          }
+        }
+        
+        
+        @keyframes image
+        {
+            0%{background: url(m1.jpeg);background-repeat: no-repeat;  background-size: cover;}
+            25%{background: url(m2.jpeg) no-repeat;
+                background-size: cover;}
+            50%{background: url(m3.jpeg);  background-repeat: no-repeat;
+                background-size: cover;}
+            75%{background: url(m4.jpeg); background-repeat: no-repeat;
+                background-size: cover;}
+            100%{background: url(m5.jpeg); background-repeat: no-repeat;
+                background-size: cover;}
+        }
+        
+        
+         .main h1{
+          padding-top: 23%;
+          position: absolute;
+          color: white;
+          z-index: 100;
+          padding-left:50px;
+        }
+        
+        
+         #exp .btn{
+          background-color:rgb(91, 87, 87);
+          color: white;
+        }
+        
+        
+        #exp .btn:hover{
+          background-color: aliceblue;
+          color: black;
+        }
+        
+        
+        #ss h2{
+          position:relative;
+          top: -70px;
+        
+         z-index: 1;
+          color:white;
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        
+        
+        #ss img{
+          transition: all 3s;
+        }
+        
+        #ss img:hover{
+          transform: scale(1.1);
+          transition: all 3s;
+        }
+        
+        #ss p{
+          position:relative;
+         left:20px;
+         top: -40px;
+         
+         font-size: 20px;
+         z-index: 1;
+          color:white;
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        
+        
+        
+        .uns{
+          position:relative;
+         left:20px;
+         top: -45px;
+         
+         font-size: 20px;
+         z-index: 1;
+          color:white;
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        /* #travel .container{
+          background-color: #3cb371;
+        } */
+        
+        
+        .btn{
+          background-color:#3cb371;
+          border: 2px solid black;
+          position: relative;
+          z-index: 1;
+          color: white;
+          left: 45%;
+          top: -30px;
+        
+          
+        }
+        
+          .btn:hover{
+          background-color:white;
+          color: black;
+        
+        
+          
+        
+          
+          
+        }
+        
+        .cnt{
+          width: 20vw;
+          padding: 5px;
+          color: white;
+          font-size: 20px;
+          margin-left: 90px;
+        }
+        
+        
+        .main ul li {
+          list-style: none;
+          text-decoration: none;
+        }
+        
+        .main ul a{
+          text-decoration: none;
+          font-size: 20px;
+          font-weight: bold;
+          color: white;
+          
+        }
+
+
+
+        #cd h2{
+          position: absolute;
+          top: 150px;
+          content: '';
+          color: aliceblue;
+      left: 40px;
+          
+         }
+
+
+#cd button{
+  position: absolute;
+          top: 220px;
+          left: 50px;
+          content: ''; 
+          color: white;
+          padding: 8px;
+          font-size: 18px;
+          background-color: maroon;
+}
+
+
+@media   (max-width:500px)
+{
+#cd button{
+  position: absolute;
+          top: 220px;
+          font-size:20vw;
+        text-align: center;
+          content: ''; 
+          color: white;
+          padding: 8px;
+          font-size: 18px;
+          background-color: maroon;
+}
+}
+   
+
+@media   (max-width:500px)
+{
+  #cd button{   position: absolute;
+          top: 270px;
+          left: 50px;
+          content: ''; 
+          color: white;
+
+          padding: 8px;
+          font-size: 18px;
+          background-color:maroon;
+  
+  }
+}
+
+
+
+        /* 1st css part */
+        
+        .imgs{
+background-image: url(d1.jpg);
+width: 100%;
+height: 600px;
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+
+
+}
+
+
+.imgs h1{
+width: 100vw;
+	z-index: 1;
+	position:relative;
+	left: 10px;
+	top: 350px;
+  font-weight: 900;
+  font-size:50px;
+	color:aliceblue;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+
+span a{
+  text-decoration: none;
+  color: black;
+}
+
+
+
+        
+        </style>
+        </head>
+          <body>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         <!--nav  -->
+        <section id="home">
+         <nav class="navbar navbar-expand-lg  bg-light w-100 fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand fs-2 ps-2 " href="#"><img src="indiatours.png" alt="" height="80px" width="200px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+           
+           
+                <ul class="navbar-nav ms-auto fw-bold fs-5 margin-end mb-4">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#" style="color: #3cb371;">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="ourstory.html">OUR STORY</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="destination">DESTINATIONS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="experience" aria-disabled="true">EXPERIENCES</a>
+                </li>
+        
+        
+                <li class="nav-item">
+                    <a class="nav-link" href="" aria-disabled="true">CONTACT</a>
+                  </li>
+             </ul>
+        
+        
+        
+            </div>
+          </div>
+        </nav>
+        </section>
+
+
+<body>
+    
+
+
+    <section id="story">
+
+        <div class="container-fluid">
+            <div class="imgs">
+                <h1 class="text-center">DESTINATIONS</h1>
+
+            </div>
+
+
+
+
+
+        </div>
+
+
+
+    </section>
+
+
+
+    <!-- india -->
+
+    <section id="india">
+<div class="rts mt-4" style="background-color: rgb(241, 191, 125); padding: 4px; ">
+        <h1 class="text-center mt-5 fw-bold"><u>INDIA</u></h1>
+
+<p class="text-center p-5 w-responsive"> This is a country travellers fantasize about exotic, oriental, ancient India. It is also modern, booming, chaotic India. Between the two lies a wealth of delights the charm of a golden civilisation still alive and kicking after centuries and to be glimpsed as you turn the corner of a palace or a fort; as you hear the sweetness of the flute in the misty northern hills and the deep rhythm of the sitar at a mesmerizing performance; as you drive past the captivating sound of temple bells that ring out loud amidst the noise of a daily ritual prayer; as you wander into monuments adorned with precious stones – unguarded, still splendid; as you lie deeply relaxed drifting to music, massaged by the strong yet gentle touch of Ayurveda healers.
+ <br> <br> <span class="text-center mt-1 fw-bold" ><a href="">Read More</a></span>
+</p>
+
+
+
+
+    </div>
+    </section>
+
+
+
+
+
+
+
+
+    
+<!-- footer -->
+
+
+
+<section id="lst">
+    <footer>
+    <div class="container-fluid mt-5 bg-dark w-100">
+      <div class="row">
+    
+        <div class="col-lg-4 col-md-4 col-sm-12 col-12 mt-3  mb-4" style="background-color: aqua;  margin-left: 25px; width:27%;">
+          <form action="">
+    <div class="main mt-4 p-1" >
+      <input type="text" placeholder="Name" name="" class="form-control"><br>
+    
+      <input type="email" placeholder="Email" name=""  class="form-control"><br>
+    
+    
+      <textarea name="" id="" cols="44" rows="4" placeholder="Type or Message"></textarea>
+      <input type="submit" name="" id="" class="form-control bg-danger text-white fw-bold fs-5 p-1">
+    
+    
+    
+    </div>
+    
+          </form>
+    
+        </div>
+    
+    
+    
+    
+    
+        <!-- 2nd option -->
+    
+    
+        <div class="col-lg-4 col-md-4 col-sm-12 col-12 mt-3 mb-4 text-white" >
+          <form action="">
+    <div class="main mt-4 p-2" >
+    
+      <b class="ms-4">QUICK LINK</b><br>
+    
+    <ul> 
+      <br>
+      <li><a href="">Home</a></li><br>
+      <li><a href="">Our Story</a></li><br>
+      <li><a href="">Destination</a></li><br>
+      <li><a href="">Experience</a></li><br>
+      <li><a href="">Blog</a></li>
+    </ul>
+    
+    
+     
+    
+    
+    
+    
+    
+    
+    </div>
+    
+          </form>
+    
+        </div>
+    
+    
+    
+    
+    
+        <!-- 3rd -->
+    
+    
+    
+        
+        <div class="col-lg-4 col-md-4 col-sm-12 col-12 mt-3 mb-4 text-white" >
+          <form action="">
+    <div class="main mt-4" >
+    
+      <b>CONTACT INFORMATION</b><br>
+      <br>
+    
+    <i class="fa fa-home fs-4"></i>&nbsp;<b>Address: 252-A, 1st Floor, <br> Shahpur Jat New Delhi - 110049, India</b><br><br>
+    
+    <i class="fa fa-phone-volume"></i>&nbsp;<b>Phone: +91 11464 52177
+    </b><br><br>
+    
+    
+    <i class="fa fa-envelope fs-4"></i>&nbsp;<b>Phone: +91 11464 52177
+    </b>
+    
+    
+     
+    
+    
+    
+    
+    
+    
+    </div>
+    
+          </form>
+    
+        </div>
+    
+    
+      </div>
+    
+    
+    </div>
+    
+    
+    
+    
+    </footer>
+    
+    
+    </section>
+  
+  
+  
+  
+  
+          
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  
+  </html>

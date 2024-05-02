@@ -1,0 +1,255 @@
+*{
+	margin: 0;
+	box-sizing: border-box;
+}
+#nav{
+	background-color: black;
+
+}
+#co{
+	color: white;
+}
+#cl{
+	border: 2px solid red;
+	color: red;
+	background-color: black;
+	width: 70px;
+}
+#cl:hover{
+	border: 2px solid red;
+	color:white;
+	background-color:red;
+}
+#im{
+	width: 200px;
+	height: 65px;
+}
+#nab{
+	background-color:rgb(38, 37, 37);
+}
+.wid{
+	height: 550px;
+}
+.cont{
+	background-color:rgb(38, 37, 37);
+ 
+}
+ 
+
+.contai{
+			position: absolute;
+			width: 100%;
+			height:75vh;
+			top: 62%;
+			left:45%;
+			transform: translate(-50%, -50%);
+			background-color:white;
+			box-shadow: 0 10px 10px navy;
+			border-radius: 10px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.contai .slider .item
+		{
+			position: absolute;
+			height: 300px;
+			width: 180px;
+			top: 50%;
+
+			transform: translate(0, -50%);
+			border-radius: 10px;
+			box-shadow: 0 10px 10px lightblue;
+			padding: 10px;
+			background-position: center;
+			background-size: cover;
+			display: inline-block;
+			transition: all 0.5s;
+		}
+		.slider .item:nth-child(1),
+		.slider .item:nth-child(2)
+		{
+			top: 0;
+			left: 0;
+			transform: translate(0);
+			width: 100%;
+			height: 100%;
+		}
+		.slider .item:nth-child(3){
+			left: 60%;
+		}
+/*here n = items lengths or index[0,1,2,3.........]		*/
+.slider .item:nth-child(n+4){
+			left: calc(50% + 110px);
+			opacity: 0;
+		}
+		.item .content{
+			position: absolute;
+			top: 50%;
+			transform: translate(0, -50%);
+			left: 100px;
+			text-align: left;
+			color: white;
+			width: 300px;
+			display: none;
+		}
+		.item:nth-child(2) .content{
+			display: block;
+		}
+		.item .content .name{
+			 text-transform: uppercase;
+			 font-size: 41px;
+			 font-weight: bold;
+			 font-family: cursive;
+			 opacity: 0;
+			 animation: animate 1s ease-in-out 1 forwards;
+		}
+		.item .content .dec{
+			 margin: 10px 0 10px;
+			 font-size: 10px;
+			  opacity: 0;
+			 animation: animate 1s ease-in-out 0.3s 1 forwards;
+
+		}
+		.item .content button{
+			  padding: 10px 20px;
+			  border: none;
+			  background-color: white;
+			  font-weight: 400;
+			  transition: all 0.5s;
+			   opacity: 0;
+			 animation: animate 1s ease-in-out  0.6s 1 forwards;
+			 
+		}
+		.item .content button:hover
+		{
+			background-color: orange;
+			cursor: pointer;
+		}
+		@keyframes animate{
+			from{
+				opacity: 0;
+				transform: translate(0, 100px);
+				filter: blur(33px);
+			}
+			to{
+				opacity: 1;
+				transform: translate(0);
+				filter: blur(0);
+			}
+		}
+		.buttons{
+			position: absolute;
+			width: 100%;
+			text-align: center;
+			bottom: 10px;
+		}
+		.buttons button{
+			 margin: 0 15px;
+			 font-size: 25px;
+			 background: transparent;
+			 border: none;
+			 color: white;
+			 cursor: pointer;
+			opacity:0.3;
+			transition: all 0.5s;
+		}
+
+		.buttons button:hover{
+			 
+			opacity:0.5;
+		}
+
+		#is{
+			width: 95%;
+			padding: 5px;
+			background-color: rgb(65, 66, 69);
+			color: lightgray;
+			font-size: 20px;
+margin-left: 10px;
+		}
+		#s:hover{
+ 	 background-color: red;
+ 	 width: 40px;
+		}
+		.tg{
+			background-color:rgb(65, 66, 69);
+		}
+	.km{
+	background-color:rgb(38, 37, 37);
+}
+.km #ha{
+	 z-index: 1;
+	 position: absolute;
+	 top:2380px;
+	 left: 50px;
+	 color: white;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+}
+.km .sa{
+	 z-index: 1;
+	 position: absolute;
+	 top:2310px;
+	 left: 50px;
+	 color: white;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+}
+ 
+
+
+
+ 
+.foot-panel2
+{
+    background-color:black;
+     
+    height: 600px;
+    display: flex;
+    justify-content: space-evenly;
+}
+ul{
+    margin-top: 20px;
+}
+ul a
+{
+    display: block;
+    font-size: 0.85rem;
+    margin-top: 10px;
+     
+}
+.aq{
+	color: white!important;
+	text-decoration: none;
+}
+.foot-panel3
+{
+    background-color:black;
+     height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+ 
+.aq{
+	color: white!important;
+	text-decoration: none;
+}
+.foot-panel4
+{
+    background-color:black;
+     height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+ 
+.aq{
+	color: white!important;
+	text-decoration: none;
+}
+ 
+ 
+		
+ 

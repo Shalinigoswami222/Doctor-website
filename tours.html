@@ -1,0 +1,844 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+ 
+
+
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar .navbar-nav .nav-item .nav-link{
+   margin: 12px 20px;
+   color: black;
+}
+
+
+.navbar .navbar-nav .nav-item .nav-link:hover{
+
+color: #3cb371 ;
+
+}
+
+.btns{
+  border: 4px solid white;
+  width: 400px;
+  height:45px;
+  text-decoration: none;
+font-size: 18px;
+
+padding:10px 15px;
+color: aliceblue;
+
+
+}
+
+.btns:hover{
+background-color: #3cb371;
+color: black;
+}
+
+.main .card-text{
+  color: grey;
+}
+
+.list ul li{
+
+  list-style: none;
+
+}
+
+.list li a{
+  text-decoration: none;
+}
+
+
+
+.conta .main{
+   width: 500vw;
+    height: 95vh;
+    margin-top: 20px;
+   
+    background: url(m1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: image 40s infinite linear;
+
+}
+
+@media  (max-width: 500px) and (min-width:200px){
+  .container .main h1 {
+   position:absolute;
+   padding-top:60%;
+   text-align: center;
+   z-index: 1;
+   padding-right: 30px;
+   color:white;
+
+  }
+}
+
+
+@keyframes image
+{
+    0%{background: url(m1.jpeg);background-repeat: no-repeat;  background-size: cover;}
+    25%{background: url(m2.jpeg) no-repeat;
+        background-size: cover;}
+    50%{background: url(m3.jpeg);  background-repeat: no-repeat;
+        background-size: cover;}
+    75%{background: url(m4.jpeg); background-repeat: no-repeat;
+        background-size: cover;}
+    100%{background: url(m5.jpeg); background-repeat: no-repeat;
+        background-size: cover;}
+}
+
+
+ .main h1{
+  padding-top: 23%;
+  position: absolute;
+  color: white;
+  z-index: 100;
+  padding-left:50px;
+}
+
+
+ #exp .btn{
+  background-color:rgb(91, 87, 87);
+  color: white;
+}
+
+
+#exp .btn:hover{
+  background-color: aliceblue;
+  color: black;
+}
+
+
+#ss h2{
+  position:relative;
+  top: -70px;
+
+ z-index: 1;
+  color:white;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#ss img{
+  transition: all 3s;
+}
+
+#ss img:hover{
+  transform: scale(1.1);
+  transition: all 3s;
+}
+
+#ss p{
+  position:relative;
+ left:20px;
+ top: -40px;
+ 
+ font-size: 20px;
+ z-index: 1;
+  color:white;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.uns{
+  position:relative;
+ left:20px;
+ top: -45px;
+ 
+ font-size: 20px;
+ z-index: 1;
+  color:white;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* #travel .container{
+  background-color: #3cb371;
+} */
+
+
+.btn{
+  background-color:#3cb371;
+  border: 2px solid black;
+  position: relative;
+  z-index: 1;
+  color: white;
+  left: 45%;
+  top: -30px;
+
+  
+}
+
+  .btn:hover{
+  background-color:white;
+  color: black;
+
+
+  
+
+  
+  
+}
+
+.cnt{
+  width: 20vw;
+  padding: 5px;
+  color: white;
+  font-size: 20px;
+  margin-left: 90px;
+}
+
+
+.main ul li {
+  list-style: none;
+  text-decoration: none;
+}
+
+.main ul a{
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  
+}
+
+
+
+</style>
+</head>
+  <body>
+ <!--nav  -->
+<section id="home">
+ <nav class="navbar navbar-expand-lg  bg-light w-100 fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand fs-2 ps-2 " href="#"><img src="indiatours.png" alt="" height="80px" width="200px"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+   
+   
+        <ul class="navbar-nav ms-auto fw-bold fs-5 margin-end mb-4">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#" style="color: #3cb371;">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="ourstory.html">OUR STORY</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="service.html">DESTINATIONS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="blog.html" aria-disabled="true">Experiences</a>
+        </li>
+
+
+        <li class="nav-item">
+            <a class="nav-link " href="contact.html" aria-disabled="true">Contact</a>
+          </li>
+     </ul>
+
+
+
+    </div>
+  </div>
+</nav>
+</section>
+<!-- main Page -->
+
+<section id="home">
+
+    <div class="conta">
+
+<div class="main w-100 w-responsive" class="chane-content">
+        <h1 class="text-center mt-5 w-responsive">Delivering Inspiring Experiences  <br>
+        Since 1987</h1>
+
+
+    </div>
+    </div>
+
+
+
+</section>
+
+
+
+<!-- 2nd part -->
+
+<section id="about">
+  <div class="contaienr">
+    <div class="row">
+
+      <div class="col-lg-6 col-md-4 col-sm-12 col-12 mt-5">
+
+      <div class="card border-0 p-5">
+        <div class="content " style="margin-left:129px; text-align:justify;flex-wrap: wrap;background-color: rgb(81, 70, 70); height:calc(60vh - 4px); width:90%;">
+        <div class="card-title">
+          <h3 class="text-md-start ms-5  mt-5 p-2 text-white">EXPLORE A DIFFERENT WAY TO TRAVEL</h3>
+          <p class=" text-md-start text-center  p-4 text-white">Discover new cultures and have a wonderful rest with Backpack Story! Select the country you’d like to visit and provide our agents with an estimated time – they’ll find and offer the most suitable tours and hotels.
+ 
+
+            During our work, we organized countless journeys for our clients. We started as a small tour bureau, and soon we expanded our offers list. Today we have valuable experience travelling and we can advise the most stunning resorts, cities and countries to visit!</p>
+
+          
+          </div>
+          </div>
+          </div>
+    </div>
+
+
+
+    <!-- 2nd -->
+
+    <div class="col-lg-6 col-md-4 col-sm-12 col-12 mt-5 d-flex pe-5">
+      <div class="main " style="text-align:justify;flex-wrap: wrap; width:100%;">
+        <img src="m6.jpeg" class="w-100 mt-5" alt="">
+          
+           </div>
+     </div>
+
+
+
+
+
+
+    </div>
+
+
+  </div>
+
+
+
+</section>
+<!-- experince -->
+
+<section id="exp">
+  <div class="container">
+    <div class="row">  
+
+      <div class="col-md-12">
+        <div class="header text-center pb-2 mt-4">
+<h2><u>EXPERIENCES</u></h2>
+        </div>
+
+      </div>
+
+
+    </div>
+
+  <div class="card border-0 d-flex ps-5" style=" background-color: lightpink;">
+    <div class="row g-0">
+    
+      <div class="col-md-3 mt-3 p-4">
+        <img src="a1.jpg" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-3 mt-3">
+        <div class="card-body">
+          <h5 class="card-title mt-4 fw-bold fs-2">South India</h5>
+           <div class="card-text mt-2"> The land of temples, jasmine flowers, coconut curries, silk sarees, sandalwood and the devout!</div>
+<div class="btn ms-5 text-center  mt-4">Read More</div>
+
+        </div>
+      </div>
+
+    
+
+      <!-- 2nd -->
+
+
+      <div class="col-md-3 mt-3 p-4">
+        <img src="a2.jpg" class="img-fluid rounded-start"  alt="...">
+      </div>
+      <div class="col-md-3 mt-3">
+        <div class="card-body mt-4">
+          <h5 class="card-title fw-bold fs-2">
+            South India</h5>
+            <div class="card-text"> The land of temples, jasmine flowers, coconut curries, silk sarees, sandalwood and the devout!
+</div>
+<div class="btn text-center  mt-4" >Read More</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+  <div class="card border-0 d-flex ps-5 mt-3" style=" background-color:bisque;">
+    <div class="row g-0">
+    
+      <div class="col-md-3 mt-3 p-4">
+        <img src="a1.jpg" class="img-fluid rounded-start" alt="...">
+      </div>
+
+      <div class="col-md-3 mt-3">
+        <div class="card-body">
+          <h5 class="card-title  fw-bold fs-2">South India</h5>
+           <div class="card-text"> The land of temples, jasmine flowers, coconut curries, silk sarees, sandalwood and the devout!</div>
+<div class="btn  text-center  mt-4">Read More</div>
+
+        </div>
+      </div>
+
+    
+
+      <!-- 2nd -->
+
+
+      <div class="col-md-3 mt-3 p-4">
+        <img src="a2.jpg" class="img-fluid rounded-start"  alt="...">
+      </div>
+      <div class="col-md-3 mt-3">
+        <div class="card-body mt-2">
+          <h5 class="card-title fw-bold fs-2">
+            South India</h5>
+            <div class="card-text"> The land of temples, jasmine flowers, coconut curries, silk sarees, sandalwood and the devout!
+</div>
+<div class="btn  text-center  mt-4" >Read More</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+    
+
+  </div>
+
+
+</section>
+
+<!-- inspired -->
+
+<section id="get">
+
+  <div class="contaienr">
+
+    <div class="row">
+      <div class="col-md-12 col-12 col-lg-6 mt-5 ms-5 ms-sm-15">
+        <div class="card border-0 text-center">
+<img src="m2.jpeg" alt="" class="img-fluid mt-4" style="height: 100vh; background-position: center; background-size: cover;">
+          </div>
+
+      </div>
+
+
+
+      <div class="col-md-12 col-12 col-lg-5 mt-5">
+        <div class="card border-0 text-center">
+          <h1 class="card-title mt-3"><u>Get Inspired</u></h1>
+          <p class="text-center justify-content justify">Welcome to Our Travel Laboratory where ideas are transformed into authentic local and Out of the Ordinary Experience.
+
+            The Destination Knowledge Centre (DKC), first of its kind in the travel industry, was formed with a couple of internal travel specialists, people with varied interests ranging from anthropology, art, food, pottery, music to painting, reading & writing. A bit of a maverick seekers’ club, if you may call it that! We have evolved into quite a laboratory over the last couple of years, catering to unique experiences for the inquisitive savvy traveller. The DKC with extensive local know how and expertise discovers, explores, travels and designs programmes that are for seekers of authentic and sustainable life experiences.
+            
+            Our Explorers travel almost every month of the year covering thousands of miles across the compelling stories, new knowledge, new skills and to connect with locals. We realise that “No matter how good or wise we are, locals always know the best kept secrets”. The locals are people from all walks of life, bankers, entrepreneurs, housewives, expats, academics, social workers, artists & collectors, designers; all passionate about their town or culture or are just interesting conversationalists! We call them “Friends of the Company” who are not necessarily from the travel business. Our friends love their mythology, history and folklore and brilliantly weave them into their narratives, the end result being a true local experience.
+            
+            Travellers today are seeking a deeper meaning to what they do and how they explore the many facets of the world. Personal values such as responsibility, fairness, knowledge, sustainability and time are increasingly important to them. They are looking at experiencing this new way of travel and searching for deep insights into different traditions and cultures, enabling authentic encounters that can provide lasting experiences to them. Indeed the Future of Travel is “Experiences.”</p>
+          </div>
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+</section>
+
+
+<!-- travel -->
+<section id="travel">
+ 
+
+<div class="row">
+
+  <div class="col-md-12">
+    <div class="section-header text-center pb-5">  
+     <h2 class="mt-5"> <u>Travel Ideas</u></h2>
+ </div>
+</div>
+
+
+    
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+ </div>
+  
+
+
+ <div class="contaienr w-100 w-responsive" >
+
+
+  <div class="row" style="background-color: #3cb371; width:100%;">
+
+    <div class="col-lg-4 col-md-4 col-12 col-sm-12 mt-5">
+<div class="border-0 ms-4 " id="ss" style="width: 21rem;">
+  <img src="m4.jpeg" height="300px" alt="" class="card-img-top cardimg">
+  <h2 class="text-center">Rajasthan In Style</h2>
+  <p class="text-center">Click here</p>
+
+<u class="uns">___________________________________________</u>
+
+</div>
+
+    </div>
+
+
+
+
+    <!-- 2nd -->
+
+    <div class="col-lg-4 col-md-4 col-12 col-sm-12 mt-5 ">
+      <div class="border-0 ms-4" id="ss" style="width: 21rem;">
+        <img src="m2.jpeg" height="300px" alt="" class="card-img-top cardimg">
+        <h2 class="text-center">Classic Gujrat</h2>
+        <p class="text-center">Click here</p>
+        <u class="uns">___________________________________________</u>
+      
+      </div>
+      
+          </div>
+
+
+          <!-- 3rd -->
+
+          <div class="col-lg-4 col-md-4 col-12 col-sm-12 mt-5">
+            <div class="border-0 " id="ss" style="width: 21rem;">
+              <img src="m5.jpeg" height="300px" alt="" class="card-img-top cardimg">
+              <h2 class="text-center">Jewels of the Himalaya</h2>
+              <p class="text-center"><a href="#home" style="text-decoration: none; color: aliceblue;">Click here</a></p>
+              <u class="uns">___________________________________________</u>
+            
+            </div>
+            
+                </div>
+
+
+                <a href=""><button class="btn">View More</button></a>
+
+  </div>
+  </div>
+
+
+  
+  </section> 
+
+
+  <!-- news -->
+
+
+  <section id="news">
+
+
+    <div class="row">
+
+      <div class="col-md-12">
+        <div class="section-header text-center pb-5">  
+         <h2 class="mt-5"> <u>NEWS LATTER</u></h2>
+         <div class="title"><u></u></div>
+     </div>
+    </div>
+    
+
+
+
+    <div class="container">
+<div class="row ms-5">
+  <!-- 1st -->
+  <div class="col-lg-4 col-md-4 col-12 col-sm-12 mt-5 ">
+    <div class="border-0 ms-5" id="ss" style="width: 20rem;">
+      <img src="m3.jpeg" height="300px" alt="" class="card-img-top cardimg">
+    <div class="card-text text-center"><h4 class="text-center mt-2">Blog2
+    </h4>
+      September 29, 2023  No Comments</div>
+      <a href="#blog" style="margin-left:145px; text-decoration: none; margin-top: 20px; font-size: 20px; color:#3cb371;">Read More..</a>
+    </div>
+    
+        </div>
+
+
+        <!-- 2nd -->
+
+          
+  <div class="col-lg-4 col-md-4 col-12 col-sm-12 mt-5">
+    <div class="border-0 ms-5" id="ss" style="width: 20rem;">
+      <img src="m1.jpeg" height="300px" alt="" class="card-img-top cardimg">
+      <div class="card-text text-center"><h4 class="text-center mt-2">Blog2
+      </h4>
+        September 29, 2023  No Comments</div>
+        <a href="#blog" style="margin-left:145px; text-decoration: none; margin-top: 20px; font-size: 20px; color:#3cb371;">Read More..</a>
+    </div>
+    
+        </div>
+
+
+        <!-- 3rd -->
+
+          
+  <div class="col-lg-4 col-md-4 col-12 col-sm-12 mt-5  ">
+    <div class="border-0 ms-5" id="ss" style="width: 20rem;">
+      <img src="m6.jpeg" height="300px" alt="" class="card-img-top cardimg">
+      <div class="card-text text-center"><h4 class="text-center mt-2">Blog2
+      </h4>
+        September 29, 2023  No Comments</div>
+        <a href="#blog" style="margin-left:145px; text-decoration: none; margin-top: 20px; font-size: 20px; color:#3cb371;">Read More..</a>
+    </div>
+    
+        </div>
+</div>
+
+    </div>
+    
+        
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     </div>
+  </section>
+
+<!-- start -->
+<section id="start">
+
+  <div class="container-fluid mt-5 w-100 p-5" style="background-color: #3cb371; width:100%;" >
+    <div class="row">
+      <div class="col-md-4 col-lg-6 col-sm-12 col-12 mt-5">
+        <h4 class="ps-2 pt-3 p-2">START PLANNING YOUR NEXT TRIP NOW!</h4>
+          <p class=" mt-5 p-2">Discover new cultures and have a wonderful rest with Backpack Story! Select the country you’d like to visit and provide our agents with an estimated time – they’ll find and offer the most suitable tours and hotels.</p>
+<div class="card-text w-responsive w-100"><button class=" cnt bg-danger w-50 w-responsive">Client Enquiry Form</button>
+
+
+</div>
+
+
+          </div>
+
+
+
+          <div class="col-md-6 col-lg-6 col-sm-12 col-12 mt-4">
+            <div class="img">
+           <img src="k1.jpg" alt="" class="img-fluid p-5" style="width: 100%">
+    
+    </div>
+    
+    
+              </div>
+
+
+        </div>
+
+      </div>
+
+
+
+
+
+      <!-- 2nd -->
+
+
+    
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+</section>
+
+
+
+<!-- footer -->
+
+<section id="lst">
+<footer>
+<div class="container-fluid mt-5 bg-dark w-100 w-responsive" style="width: 100%vw">
+  <div class="row">
+
+    <div class="col-lg-4 col-md-4 col-sm-12 col-12 mt-3  mb-4"style="background-color:aqua; width:auto; margin-left:20px;"  >
+      <form action="">
+<div class="main mt-4 p-2" >
+  <input type="text" placeholder="Name" name="" class="form-control"><br>
+
+  <input type="email" placeholder="Email" name=""  class="form-control"><br>
+
+
+  <textarea name="" id="" cols="42" rows="4" placeholder="Type or Message"></textarea>
+  <input type="submit" name="" id="" class="form-control bg-danger text-white fw-bold">
+
+
+
+</div>
+
+      </form>
+
+    </div>
+
+
+
+
+
+    <!-- 2nd option -->
+
+
+    <div class="col-lg-4 col-md-4 col-sm-12 col-12 mt-3 mb-4 text-white" >
+      <form action="">
+<div class="main mt-4 p-2" >
+
+  <b class="ms-4">QUICK LINK</b><br>
+
+<ul> 
+  <br>
+  <li><a href="">Home</a></li><br>
+  <li><a href="">Our Story</a></li><br>
+  <li><a href="">Destination</a></li><br>
+  <li><a href="">Experience</a></li><br>
+  <li><a href="">Blog</a></li>
+</ul>
+
+
+ 
+
+
+
+
+
+
+</div>
+
+      </form>
+
+    </div>
+
+
+
+
+
+    <!-- 3rd -->
+
+
+
+    
+    <div class="col-lg-4 col-md-4 col-sm-12 col-12 mt-3 mb-4 text-white" >
+      <form action="">
+<div class="main mt-4" >
+
+  <b>CONTACT INFORMATION</b><br>
+  <br>
+
+<i class="fa fa-home fs-4"></i>&nbsp;<b>Address: 252-A, 1st Floor, <br> Shahpur Jat New Delhi - 110049, India</b><br><br>
+
+<i class="fa fa-phone-volume"></i>&nbsp;<b>Phone: +91 11464 52177
+</b><br><br>
+
+
+<i class="fa fa-envelope fs-4"></i>&nbsp;<b>Phone: +91 11464 52177
+</b>
+
+
+ 
+
+
+
+
+
+
+</div>
+
+      </form>
+
+    </div>
+
+
+  </div>
+
+
+</div>
+
+
+
+
+</footer>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</html>

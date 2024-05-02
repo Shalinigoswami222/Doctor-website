@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Project</title>
+    <!-- Aos link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Jquery Link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Font awsome link -->
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	 <!-- BootStrap link -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<style type="text/css">
+		*{
+			margin: 0;
+			box-sizing: border-box;
+		
+		}
+		body{
+			background-color: #eaeaea;
+			
+		
+		}
+
+
+		.container{
+			
+			width: 100%;
+			height:100%;
+			top: 50%;
+		
+			background-color:white;
+			box-shadow: 0 30px 50px navy;
+			border-radius: 10px;
+		}
+		.container .slider .item
+		{
+			position: absolute;
+			height:300px;
+			width: 200px;
+			top: 50%;
+			transform: translate(0, -50%);
+			border-radius: 10px;
+			box-shadow: 0 10px 30px lightblue;
+			padding: 10px;
+			background-position: center;
+			background-size: cover;
+			display: inline-block;
+			transition: all 0.5s;
+		}
+		.slider .item:nth-child(1),
+		.slider .item:nth-child(2)
+		{
+			top: 0;
+			left: 0;
+			transform: translate(0);
+			width: 100%;
+			height: 100%;
+		}
+		.slider .item:nth-child(3){
+			left: 50%;
+		}
+		.slider .item:nth-child(4){
+			left: calc(50% + 220px);
+		}
+		.slider .item:nth-child(5){
+			left: calc(50% + 440px);
+		}
+/*here n = items lengths or index[0,1,2,3.........]		*/
+.slider .item:nth-child(n+6){
+			left: calc(50% + 660px);
+			opacity: 0;
+		}
+		.item .content{
+			position: absolute;
+			top: 50%;
+			transform: translate(0, -50%);
+			left: 100px;
+			text-align: left;
+			color: white;
+			width: 300px;
+			display: none;
+		}
+		.item:nth-child(2) .content{
+			display: block;
+		}
+		.item .content .name{
+			 text-transform: uppercase;
+			 font-size: 41px;
+			 font-weight: bold;
+			 font-family: cursive;
+			 opacity: 0;
+			 animation: animate 1s ease-in-out 1 forwards;
+		}
+		.item .content .dec{
+			 margin: 10px 0 10px;
+			 font-size: 10px;
+			  opacity: 0;
+			 animation: animate 1s ease-in-out 0.3s 1 forwards;
+
+		}
+		.item .content button{
+			  padding: 10px 20px;
+			  border: none;
+			  background-color: white;
+			  font-weight: 400;
+			  transition: all 0.5s;
+			   opacity: 0;
+			 animation: animate 1s ease-in-out  0.6s 1 forwards;
+			 
+		}
+		.item .content button:hover
+		{
+			background-color: orange;
+			cursor: pointer;
+		}
+		@keyframes animate{
+			from{
+				opacity: 0;
+				transform: translate(0, 100px);
+				filter: blur(33px);
+			}
+			to{
+				opacity: 1;
+				transform: translate(0);
+				filter: blur(0);
+			}
+		}
+		.buttons{
+			position: absolute;
+			width: 100%;
+			text-align: center;
+			bottom: 10px;
+		}
+		.buttons button{
+			 margin: 0 15px;
+			 font-size: 25px;
+			 background: transparent;
+			 border: none;
+			 color: white;
+			 cursor: pointer;
+			opacity:0.3;
+			transition: all 0.5s;
+		}
+
+		.buttons button:hover{
+			 
+			opacity:0.5;
+		}
+
+
+	</style>
+
+	</head>
+</style>
+	<body>
+
+
+		<div class="container">
+			<div class="slider">
+		<div class="item" style="background-image: url(m1.jpg);">
+			<div class="content">
+			<div class="name">Roses</div>
+			<div class="dec">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</div>	
+			<button>see more</button>
+		</div>
+		</div>
+
+		<div class="item" style="background-image: url(m2.jpg);">
+			<div class="content">
+			<div class="name">Flower</div>
+			<div class="dec">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</div>	
+			<button>see more</button>
+		</div>
+		</div>
+
+		<div class="item" style="background-image: url(m3.jpg);">
+			<div class="content">
+			<div class="name">Rose</div>
+			<div class="dec">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</div>	
+			<button>see more</button>
+		</div>
+		</div>
+
+		<div class="item" style="background-image: url(m4.jpg);">
+			<div class="content">
+			<div class="name">Lily</div>
+			<div class="dec">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</div>	
+			<button>see more</button>
+		</div>
+		</div>
+
+		<div class="item" style="background-image: url(m5.jpg);">
+			<div class="content">
+			<div class="name">Sunflower</div>
+			<div class="dec">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</div>	
+			<button>see more</button>
+		</div>
+		</div>
+	</div>
+	<div class="buttons">
+	<button class="pre"><i class="fa-solid fa-arrow-left"></i></button>
+	<button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+</div>
+</div>
+
+
+
+
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+			<script type="text/javascript">
+		 let next=document.querySelector('.next')
+		  let pre=document.querySelector('.pre')
+
+		  next.addEventListener('click', function(){
+		  	let items=document.querySelectorAll('.item')
+		  	document.querySelector('.slider').appendChild(items[0])
+		  })
+
+		   pre.addEventListener('click', function(){
+		  	let items=document.querySelectorAll('.item')
+		  	document.querySelector('.slider').prepend(items[items.length - 1])
+		  })
+			</script>
+		</body>
+</html>

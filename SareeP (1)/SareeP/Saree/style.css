@@ -1,0 +1,38 @@
+*{
+	
+}
+.line:hover{
+	border-bottom: 2px solid black;
+	color: white!important;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 25px;
+
+}
+.navcolour{
+	background-color: rgb(106,109,105);
+}
+.underline{
+	text-decoration: none;
+}
+.banheight{
+	height: 300px!important;
+}
+#btn{
+ 	background-color:green;
+ 	width: 150px;
+ }
+  #btn:hover{
+ 	background-color:lightgreen;
+ 	width: 150px;
+ 	color: green!important;
+ 	 	font-weight: bold;
+ 	border-color:navy;
+
+ }
+ .back{
+ 	background-color:lightcoral;
+ }
+ 
+
+ 
